@@ -155,17 +155,17 @@ export default class MessageHandler {
     });
     if (state)
       return void M.reply(
-        `✖ This command is disabled by İşşa.${
+        `✖ This command is disabled by *İşşa.*${
           state.reason ? ` for ${state.reason}` : ""
         }`
       );
     if (!command.config?.dm && M.chat === "dm")
-      return void M.reply("This command can only be used in groups");
+      return void M.reply("This command can ONLY be used in groups");
     if (
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)
     ) {
-      return void M.reply(`Only İşşa & his MODS are allowed to use this command.`);
+      return void M.reply(`Only *İşşa* & his MODS are allowed to use this command.`);
     }
     if (command.config?.adminOnly && !M.sender.isAdmin)
       return void M.reply(
@@ -235,7 +235,7 @@ export default class MessageHandler {
         }
       );
       await this.client.sendMessage(Data.jids[p], buffer, MessageType.image, {
-        caption: `A wild pokemon appeared! Use ${this.client.config.prefix}catch to catch this pokemon.`,
+        caption: `A wild pokemon appeared! Use <${this.client.config.prefix}catch> to catch this pokemon.`,
       });
       setTimeout(async () => {
         await this.client.DB.group.updateOne(
@@ -304,7 +304,7 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `BACK TO BUSINESS (Ha-ha)`;
+    const text = `BACK ALIVE (Ha-ha)`;
     await this.client.sendMessage(
       "120363040300072277@g.us",
       text,
