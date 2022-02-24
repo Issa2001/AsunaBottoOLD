@@ -9,8 +9,8 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
-      command: "rules",
-      description: "shows the rules for beyond",
+      command: "faq",
+      description: "shows the faq of asuna",
       category: "general",
       usage: `${client.config.prefix}rules`,
       baseXp: 0,
@@ -20,8 +20,8 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     const buttons = [
       {
-        buttonId: "rules",
-        buttonText: { displayText: `${this.client.config.prefix}rules` },
+        buttonId: "faq",
+        buttonText: { displayText: `${this.client.config.prefix}faq` },
         type: 1,
       },
     ];
