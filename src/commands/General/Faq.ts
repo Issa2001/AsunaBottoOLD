@@ -61,7 +61,7 @@ export default class Command extends BaseCommand {
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q9:* How can I create a bot like Katsushika?
-📑 *A:* You can't deploy a version of Asuna thus it's 𝗇𝗈𝗍 𝖺𝗇 𝗈𝗉𝖾𝗇 𝗌𝗈𝗎𝗋𝖼𝖾 𝗉𝗋𝗈𝗃𝖾𝖼𝗍. 
+📑 *A:* You can't deploy a version of Asuna thus it's not an open source project.
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q10:* Is the project or the *Sapphire🈲* group sponsored?
