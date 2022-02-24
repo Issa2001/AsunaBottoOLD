@@ -1,28 +1,33 @@
-import { MessageType, Mimetype } from '@adiwajshing/baileys'
-import { join } from 'path'
-import MessageHandler from '../../Handlers/MessageHandler'
-import BaseCommand from '../../lib/BaseCommand'
-import WAClient from '../../lib/WAClient'
-import { ISimplifiedMessage } from '../../typings'
+/** @format */
+
+import { MessageType, Mimetype } from "@adiwajshing/baileys";
+import MessageHandler from "../../Handlers/MessageHandler";
+import BaseCommand from "../../lib/BaseCommand";
+import WAClient from "../../lib/WAClient";
+import { ISimplifiedMessage } from "../../typings";
 
 export default class Command extends BaseCommand {
-    constructor(client: WAClient, handler: MessageHandler) {
-        super(client, handler, {
-            command: 'faq',
-            description: 'Displays frequently asked questions.',
-            category: 'general',
-            usage: `${client.config.prefix}faq`
-        })
-    }
+  constructor(client: WAClient, handler: MessageHandler) {
+    super(client, handler, {
+      command: "rules",
+      description: "shows the rules for beyond",
+      category: "general",
+      usage: `${client.config.prefix}rules`,
+      baseXp: 0,
+    });
+  }
 
-    run = async (M: ISimplifiedMessage): Promise<void> => {
-        const n = [
-            './assets/images/issa.jpg'
-        ]
-        let rin = n[Math.floor(Math.random() * n.length)]
-        return void this.client.sendMessage(M.from, { url: rin }, MessageType.video, {quoted:M.WAMessage,
-            mimetype: Mimetype.gif,
-            caption: `*━━━❰ FAQ ❱━━━*
+  run = async (M: ISimplifiedMessage): Promise<void> => {
+    const buttons = [
+      {
+        buttonId: "rules",
+        buttonText: { displayText: `${this.client.config.prefix}rules` },
+        type: 1,
+      },
+    ];
+
+    const buttonMessage: any = {
+      contentText: `*━━━❰ FAQ ❱━━━*
 
 📮 *Q1:* How do I add Asuna bot in my group?
 📑 *A:* Send the group link in the bot's or owner's DM &  it will join.
@@ -56,13 +61,16 @@ export default class Command extends BaseCommand {
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q9:* How can I create a bot like Katsushika?
-📑 *A:* You can't deploy a version of Asuna thus it's a copy of BEYOND, edited & added with some commands resulting the bot to be a private source. Therefore, you can deploy the main bot *(BEYOND)* here👇
- 🎗 https://github.com/ShineiIchijo/BEYOND.
+📑 *A:* You can't deploy a version of Asuna thus it's 𝗇𝗈𝗍 𝖺𝗇 𝗈𝗉𝖾𝗇 𝗌𝗈𝗎𝗋𝖼𝖾 𝗉𝗋𝗈𝗃𝖾𝖼𝗍. 
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q10:* Is the project or the *Sapphire🈲* group sponsored?
 📑 *A:* Of course not, we're not sponsored either way but it could be your own pleasure to do that thus this is a non-profit organization.
-ᚖ ────── ✪ ────── ᚖ` }
-        )
-    }
+ᚖ ────── ✪ ────── ᚖ`,
+      footerText: "© 𝖠𝗌𝗎𝗇𝖺 2022",
+      buttons: buttons,
+      headerType: 1,
+    };
+    await M.reply(buttonMessage, MessageType.buttonsMessage);
+  };
 }
