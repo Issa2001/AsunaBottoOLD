@@ -33,7 +33,7 @@ export default class Command extends BaseCommand {
       // return void M.reply(`*Gif/Video to Sticker* feature is currently unavailable.\nYou can still use Image to Sticker though!!`)
       buffer = await this.client.downloadMediaMessage(M.WAMessage);
     if (!buffer)
-      return void M.reply(`You didn't provide any Image/Video to convert`);
+      return void M.reply(`Do you want me to create stickers out of thin air?`);
 
     const getQuality = (): number => {
       const qualityFlag = parsedArgs.joined.match(/--(\d+)/g) || "";
