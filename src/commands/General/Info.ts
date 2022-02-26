@@ -36,7 +36,7 @@ export default class Command extends BaseCommand {
     await M.reply(
       `*━━━❰ 𝖠𝖲𝖴𝖭𝖠🚀 ❱━━━*\n\n 🔮 *Groups: ${
         chats.length
-      }*/69\n\n🟩 *Users: ${users}*\n\n🚦 *Uptime: ${uptime()}*`
+      }*\n\n🟩 *Users: ${users}*\n\n🚦 *Uptime: ${uptime()}*`
     );
   };
 }
