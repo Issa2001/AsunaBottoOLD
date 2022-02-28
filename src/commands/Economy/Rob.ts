@@ -77,7 +77,7 @@ export default class Command extends BaseCommand {
       await this.client.addGold(user, gold);
       await this.client.reduceGold(target!, gold);
       return void M.reply(
-        `*@${M.sender.jid.split("@")[0]}* robbed *@${
+        `You robbed *@${
           target?.split("@")[0]
         }* and got away with *${gold} gold!*`,
         MessageType.text,
