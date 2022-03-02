@@ -71,7 +71,7 @@ export default class MessageHandler {
         this.client.user.name ||
         this.client.user.vname ||
         this.client.user.short ||
-        "Chitoge";
+        "Asuna";
     } else if (M.WAMessage.key.fromMe) return void null;
 
     if (M.from.includes("status")) return void null;
@@ -146,7 +146,7 @@ export default class MessageHandler {
       return void null;
     if (!command)
       return void M.reply(
-        `No such command, Baka! Have you never seen someone use the command *${this.client.config.prefix}help*.`
+        `Did you mean *${this.client.config.prefix}help*?`
       );
     const user = await this.client.getUser(M.sender.jid);
     if (user.ban) return void M.reply("You're Banned from using commands.");
@@ -304,7 +304,7 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `BACK ALIVE (Ha-ha)`;
+    const text = `ASUNA RECONNECTED🚀`;
     await this.client.sendMessage(
       "120363040300072277@g.us",
       text,
@@ -313,7 +313,7 @@ export default class MessageHandler {
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `I'm back, Darling !! 💖w💖`;
+    const text = `ASUNA RECONNECTED🚀`;
     await this.client.sendMessage(
       "120363040300072277@g.us",
       text,
