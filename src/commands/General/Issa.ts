@@ -1,5 +1,4 @@
 import { MessageType, Mimetype } from '@adiwajshing/baileys'
-import { join } from 'path'
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
@@ -9,9 +8,11 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'issa',
-            description: 'Displays info about issa.',
+            aliases: ['noob'],
+            description: 'Gets the link of issa',
             category: 'general',
-            usage: `${client.config.prefix}issa`
+            usage: `${client.config.prefix}issa`,
+            baseXp: 10
         })
     }
 

@@ -1,29 +1,18 @@
 import { MessageType, Mimetype } from '@adiwajshing/baileys'
-
-import { join } from 'path'
-
 import MessageHandler from '../../Handlers/MessageHandler'
-
 import BaseCommand from '../../lib/BaseCommand'
-
 import WAClient from '../../lib/WAClient'
-
 import { ISimplifiedMessage } from '../../typings'
 
 export default class Command extends BaseCommand {
-
     constructor(client: WAClient, handler: MessageHandler) {
-
         super(client, handler, {
-
             command: 'asuna',
-
-            description: 'Displays the info.',
-
+            aliases: ['repo'],
+            description: 'Gets the link of asuna',
             category: 'general',
-
-            usage: `${client.config.prefix}asuna`
-
+            usage: `${client.config.prefix}asuna`,
+            baseXp: 10
         })
 
     }
@@ -42,7 +31,7 @@ export default class Command extends BaseCommand {
 
             mimetype: Mimetype.jpeg,
 
-            caption: `🚀𝖠𝗌𝗎𝗇𝖺 𝖡𝗈𝗍\n\n⚜𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: Maintained fork of void. \n\n🧩𝗛𝗶𝗻𝘁: Asuna is not an open source project, therefore you can deploy the main bot👇 \n\n⭐ *URL:* https://github.com/Issa2001/RIN \n` }
+            caption: `🚀𝖠𝗌𝗎𝗇𝖺 𝖡𝗈𝗍\n\n⚜𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: Maintained fork of void. \n\n🧩𝗛𝗶𝗻𝘁: Asuna is not an open source project, therefore you can deploy the main bot👇 \n\n⭐ *URL:* https://github.com/ShineiIchijo/Chitoge \n` }
 
         )
 
