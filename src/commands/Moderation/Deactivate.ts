@@ -30,7 +30,7 @@ export default class Command extends BaseCommand {
       return void M.reply(
         `🟨 *${this.client.util.capitalize(
           type
-        )}* is already *inactived*, Baka!`
+        )}* is already inactive`
       );
     if (type === "wild") {
       await this.client.DB.group.updateOne(
