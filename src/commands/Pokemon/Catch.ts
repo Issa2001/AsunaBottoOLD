@@ -34,9 +34,9 @@ export default class Command extends BaseCommand {
       { $set: { catch: Date.now() } }
     );
     if (!(await (await this.client.getGroupData(M.from)).catchable))
-      return void M.reply(`There aren't any available pokemon to catch.`);
+      return void M.reply(`🟥 Currently there aren't any available pokemon to catch.`);
     const data = await this.client.getUser(M.sender.jid);
-    if (!joined) return void M.reply(`Provide the name, Baka!`);
+    if (!joined) return void M.reply(`You didn't provide the name of the pokemon.`);
     const p: string = joined.split("  ")[0].toLowerCase();
     const n = await this.client.getGroupData(M.from);
     const Name = n.lastPokemon;
@@ -80,7 +80,7 @@ export default class Command extends BaseCommand {
       );
       if (data.party.length < 6) {
         const buttonMessage: any = {
-          contentText: `Well done. You caught a level ${Level} ${this.client.util.capitalize(
+          contentText: `🎉Well done. You caught a level ${Level} ${this.client.util.capitalize(
             Name
           )}.`,
           footerText: "© 𝖠𝗌𝗎𝗇𝖺 2022",
@@ -98,7 +98,7 @@ export default class Command extends BaseCommand {
         return void M.reply(buttonMessage, MessageType.buttonsMessage);
       } else if (data.party.length >= 6) {
         const buttonMessage: any = {
-          contentText: `Well done. You caught a level ${Level} ${this.client.util.capitalize(
+          contentText: `🎉Well done. You caught a level ${Level} ${this.client.util.capitalize(
             Name
           )}. It has been transferred to your pc.`,
           footerText: "© 𝖠𝗌𝗎𝗇𝖺 2022 ",
