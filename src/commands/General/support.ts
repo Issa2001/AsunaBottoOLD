@@ -20,11 +20,11 @@ export default class Command extends BaseCommand {
         (await this.client.sendMessage(
         M.sender.jid,
                 `*📮𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 𝗟𝗶𝗻𝗸𝘀*
-「ֆAƤƤꫝɨ℟E: RE🈲」:https://chat.whatsapp.com/DwsR146ETEZDVTXudmEZQX\n\n「𝗦𝗮𝗽𝗽𝗵𝗶𝗿𝗲: 𝗖𝗮𝘀𝗶𝗻𝗼💰」:https://chat.whatsapp.com/Bxjat9sqPhlDJ7DpP7EW1b`,
+「ֆAƤƤꫝɨ℟E: RE🈲」:\n\nhttps://chat.whatsapp.com/DwsR146ETEZDVTXudmEZQX\n\n「𝗦𝗮𝗽𝗽𝗵𝗶𝗿𝗲: 𝗖𝗮𝘀𝗶𝗻𝗼💰」:\n\nhttps://chat.whatsapp.com/Bxjat9sqPhlDJ7DpP7EW1b`,
            MessageType.text
         ))
         const n = [
-            './assets/images/yuuki-asuna.jpeg'
+            './assets/images/asuna-yuuki.png'
         ]
         let rin = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: rin }, MessageType.image, {quoted:M.WAMessage,
