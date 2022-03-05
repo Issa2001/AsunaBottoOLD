@@ -167,7 +167,7 @@ export default class EventHandler {
       ));
     }
     if (promote) {
-      const text = `Congratulations *@${
+      const text = `🏅Congratulations *@${
         event.participants[0].split("@")[0]
       }*, you're now an admin.`;
       return void this.client.sendMessage(

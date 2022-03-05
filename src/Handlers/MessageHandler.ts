@@ -149,7 +149,7 @@ export default class MessageHandler {
         `Did you mean *${this.client.config.prefix}help*?`
       );
     const user = await this.client.getUser(M.sender.jid);
-    if (user.ban) return void M.reply("You're Banned from using commands.");
+    if (user.ban) return void M.reply("🟥 You're Banned from using commands.");
     const state = await this.client.DB.disabledcommands.findOne({
       command: command.config.command,
     });
