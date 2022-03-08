@@ -30,10 +30,12 @@ export default class Command extends BaseCommand {
 				caption: `*🚀𝖠𝗌𝗎𝗇𝖺 𝖡𝗈𝗍𝗍𝗈*
 
 ⚜𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: Maintained fork of Katsushika. 
+
 🚥𝗦𝘁𝗮𝘁𝘂𝘀: Asuna is free to use & there is no script sold! Anyone gossiping to have the script have intentions of fraud & swindling you! BEWARE.
+
 🧩𝗛𝗶𝗻𝘁: Asuna is not an open source project, therefore you can't deploy it.
-📑𝗟𝗶𝗰𝗲𝗻𝘀𝗲: 
-You may obtain a copy of the License at;
+
+📑𝗟𝗶𝗰𝗲𝗻𝘀𝗲: You may obtain a copy of the License at;
 http://www.gnu.org/licenses/
 
 (𝗚𝗡𝗨 𝗔𝗙𝗙𝗘𝗥𝗢 𝗚𝗘𝗡𝗘𝗥𝗔𝗟 𝗣𝗨𝗕𝗟𝗜𝗖 𝗟𝗜𝗖𝗘𝗡𝗦𝗘).
