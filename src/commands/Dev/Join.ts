@@ -34,7 +34,7 @@ export default class Command extends BaseCommand {
         return void M.reply(
           "Cannot join group. Maybe, I was removed from there before"
         );
-      if (groups.includes(gid)) return void M.reply("*🚥Status:*\n\n✅Successfully joined ${(await this.client.fetchGroupMetadataFromWA(gid)).subject}*\");
+      if (groups.includes(gid)) return void M.reply("*🚥Status:*\n\n✅Successfully joined the group.;
       return void M.reply(
         `Joined ${(await this.client.fetchGroupMetadataFromWA(gid)).subject}`
       );
