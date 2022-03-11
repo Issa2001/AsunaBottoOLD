@@ -21,12 +21,12 @@ export default class Command extends BaseCommand {
     M: ISimplifiedMessage,
     { joined }: IParsedArgs
   ): Promise<void> => {
-    if (M.from !== "120363041385545796@g.us")
+    if (M.from !== "120363022736950915@g.us")
       return void M.reply(
         `You can't bet here. Use ${this.client.config.prefix}support to get casino group link.`
       );
     const user = M.sender.jid;
-    const time = 45000;
+    const time = 25000;
     const cd = await (await this.client.getCd(user)).slot;
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
@@ -128,7 +128,7 @@ export default class Command extends BaseCommand {
       await M.reply(buttonMessage, MessageType.buttonsMessage);
     }
     if (z == "jackpot") {
-      const gold = amount * 30;
+      const gold = amount * 10;
       await this.client.addGold(user, gold);
       await this.client.DB.cd.updateOne(
         { jid: user },
