@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
     M: ISimplifiedMessage,
     { joined }: IParsedArgs
   ): Promise<void> => {
-    const time = 45000;
+    const time = 10000;
     const cd = await (await this.client.getCd(M.sender.jid)).catch;
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
