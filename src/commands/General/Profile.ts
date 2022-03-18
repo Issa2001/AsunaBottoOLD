@@ -65,9 +65,17 @@ export default class Command extends BaseCommand {
       role = "🧚 Fairy";
     } else if (exp < 175000) {
       role = "🎃 Pumpkin";
-    } else {
-      role = "❄️ DEMON KING";
-    }
+    } else if (exp < 200000) {
+      role = "❄️ Demon King";
+    } else if (exp < 225000) { 
+      role = "🌋 Mythic";
+    } else if (exp < 250000) { 
+      role = "🗡 Hermit";
+    } else if (exp < 275000) { 
+      role = "🥋 Shogun";
+    } else { 
+      role = "🐉 Immortal";
+    } 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let level: number;
     if (exp < 500) {
@@ -96,9 +104,15 @@ export default class Command extends BaseCommand {
       level = 12;
     } else if (exp < 200000) {
       level = 13;
-    } else {
+    } else if {exp < 225000) { 
       level = 14;
-    }
+    } else if {exp < 250000) { 
+      level = 15;
+    } else if {exp < 275000) { 
+      level = 16;
+    } else { 
+      level = 17;
+    } 
     await M.reply(
       await request.buffer(
         pfp || "https://wallpaperaccess.com/full/5304840.png"
@@ -110,7 +124,7 @@ export default class Command extends BaseCommand {
         (await this.client.getStatus(user)).status || "None"
       }*\n\n❤ *Haigusha: ${haigusha}*\n\n〽️ *Level: ${level}*\n\n⭐ *Exp: ${
         exp || 0
-      }*\n\n💫 *Role: ${role}*\n\n🍀 *Quiz Points: ${
+      }*\n\n💫 *Role: ${role}*\n\n🏦 *Bank ${users.bank}*\n\n🪙 *Wallet ${users.wallet}*\n\n🍀 *Quiz Points: ${
         (
           await this.client.getUser(user)
         ).quizPoints
