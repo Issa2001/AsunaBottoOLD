@@ -62,15 +62,7 @@ export default class Command extends BaseCommand {
       role = "🧚 Fairy";
     } else if (exp < 175000) {
       role = "🎃 Pumpkin";
-    } else if (exp < 200000) {
-      role = "❄️ Demon King";
-    } else if (exp < 225000) { 
-      role = "🌋 Mythic";
-    } else if (exp < 250000) { 
-      role = "🗡 Hermit";
-    } else if (exp < 275000) { 
-      role = "🥋 Shogun";
-    } else { 
+    } else {
       role = "🐉 Immortal";
     }
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -101,15 +93,9 @@ export default class Command extends BaseCommand {
       level = 12;
     } else if (exp < 200000) {
       level = 13;
-    } else if {exp < 225000) { 
+    } else {
       level = 14;
-    } else if {exp < 250000) { 
-      level = 15;
-    } else if {exp < 275000) { 
-      level = 16;
-    } else { 
-      level = 17;
-    } 
+    }
     let required: number;
     if (exp < 500) {
       required = 500;
@@ -137,10 +123,6 @@ export default class Command extends BaseCommand {
       required = 175000;
     } else if (exp < 200000) {
       required = 200000;
-    } else if (exp < 250000) { 
-      required = 250000;
-    } else if (exp < 275000) { 
-      required = 275000;
     } else {
       required = 0;
     }

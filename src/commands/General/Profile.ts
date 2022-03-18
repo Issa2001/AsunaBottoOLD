@@ -65,17 +65,9 @@ export default class Command extends BaseCommand {
       role = "🧚 Fairy";
     } else if (exp < 175000) {
       role = "🎃 Pumpkin";
-    } else if (exp < 200000) {
-      role = "❄️ Demon King";
-    } else if (exp < 225000) { 
-      role = "🌋 Mythic";
-    } else if (exp < 250000) { 
-      role = "🗡 Hermit";
-    } else if (exp < 275000) { 
-      role = "🥋 Shogun";
-    } else { 
-      role = "🐉 Immortal";
-    } 
+    } else {
+      role = "🐉 Immortal ";
+    }
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let level: number;
     if (exp < 500) {
@@ -104,15 +96,9 @@ export default class Command extends BaseCommand {
       level = 12;
     } else if (exp < 200000) {
       level = 13;
-    } else if {exp < 225000) { 
+    } else {
       level = 14;
-    } else if {exp < 250000) { 
-      level = 15;
-    } else if {exp < 275000) { 
-      level = 16;
-    } else { 
-      level = 17;
-    } 
+    }
     await M.reply(
       await request.buffer(
         pfp || "https://wallpaperaccess.com/full/5304840.png"
