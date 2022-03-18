@@ -66,7 +66,7 @@ export default class Command extends BaseCommand {
     } else if (exp < 175000) {
       role = "🎃 Pumpkin";
     } else {
-      role = "🐉 Immortal ";
+      role = "🐉 Immortal";
     }
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let level: number;
@@ -110,7 +110,7 @@ export default class Command extends BaseCommand {
         (await this.client.getStatus(user)).status || "None"
       }*\n\n❤ *Haigusha: ${haigusha}*\n\n〽️ *Level: ${level}*\n\n⭐ *Exp: ${
         exp || 0
-      }*\n\n💫 *Role: ${role}*\n\n🏦 *Bank ${users.bank}*\n\n🪙 *Wallet ${users.wallet}*\n\n🍀 *Quiz Points: ${
+      }*\n\n💫 *Role: ${role}*\n\n🍀 *Quiz Points: ${
         (
           await this.client.getUser(user)
         ).quizPoints
