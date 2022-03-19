@@ -12,6 +12,7 @@ export default class Command extends BaseCommand {
       aliases: ["s"],
       description: "Converts images/videos into stickers",
       category: "utils",
+      dm: true,
       usage: `${client.config.prefix}sticker [(as caption | tag)[video | image]]`,
       baseXp: 30,
     });
