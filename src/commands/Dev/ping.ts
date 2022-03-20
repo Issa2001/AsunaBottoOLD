@@ -16,7 +16,7 @@ export default class Command extends BaseCommand {
       category: "dev",
       usage: `${client.config.prefix}ping`,
       modsOnly: true,
-      baseXp: 20,
+      baseXp: 2000,
     });
   }
 
