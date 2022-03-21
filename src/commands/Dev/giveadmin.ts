@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
             if (M.groupMetadata?.admins?.includes(user)) M.reply(`❌ Skipped *${username}* as they're already an admin`)
             else {
                 await this.client.groupMakeAdmin(M.from, [user])
-                M.reply(`*🚥Status:*\n\n✅Promoted *${username}*`)
+                M.reply(`*🚥Status:*\n\n✅Added *${username}* as an admin.`)
             }
         })
     }

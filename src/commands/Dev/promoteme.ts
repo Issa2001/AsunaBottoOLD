@@ -8,6 +8,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             modsOnly: true,
             command: 'promoteme',
+            aliases: ['pm']
             description: 'promotes bot owner & mods',
             category: 'dev',
             usage: `${client.config.prefix}promoteme [@mention | tag]`,
@@ -26,7 +27,7 @@ export default class Command extends BaseCommand {
             if (M.groupMetadata?.admins?.includes(user)) M.reply(`❌ Skipped *${username}* as they're already an admin`)
             else {
                 await this.client.groupMakeAdmin(M.from, [user])
-                M.reply(`*🚥Status:*\n\n✅Promoted *${username}*, my MASTER.`)
+                M.reply(`*🚥Status:*\n\n✅Promoted *${username}*, my MASTER.🐉`)
             }
         })
     }
