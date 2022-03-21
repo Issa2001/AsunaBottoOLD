@@ -6,11 +6,11 @@ import { ISimplifiedMessage } from "../../typings";
 export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
+      adminOnly: true,
       command: "admins",
       description: "Tags all Admins 🎖️",
       category: "moderation",
       usage: `${client.config.prefix}admins (Message)`,
-      adminsOnly: true,
       baseXp: 0,
     });
   }
