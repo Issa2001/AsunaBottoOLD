@@ -8,7 +8,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             modsOnly: true,
             command: 'promoteme',
-            aliases: ['pm']
+            aliases: ['pm'],
             description: 'promotes bot owner & mods',
             category: 'dev',
             usage: `${client.config.prefix}promoteme [@mention | tag]`,
