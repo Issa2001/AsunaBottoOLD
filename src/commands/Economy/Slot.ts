@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
         `You can't bet here. Use ${this.client.config.prefix}support to get casino group link.`
       );
     const user = M.sender.jid;
-    const time = 15000;
+    const time = 2000;
     const cd = await (await this.client.getCd(user)).slot;
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
@@ -53,18 +53,18 @@ export default class Command extends BaseCommand {
     ];
     const p = jack[Math.floor(Math.random() * jack.length)];
     const results = [
-      "lose",
-      "win",
-      "lose",
-      "lose",
-      "lose",
-      "lose",
-      "lose",
-      "win",
-      "win",
-      "win",
-      "lose",
-      "lose",
+      "jackpot",
+      "jackpot",
+      "jackpot",
+      "jackpot",
+      "jackpot",
+      "jackpot",
+      "jackpot",
+      "jackpot",
+      "jackpot",
+      "jackpot",
+      "jackpot",
+      "jackpot",
       "win",
       "jackpot",
     ];
@@ -128,13 +128,13 @@ export default class Command extends BaseCommand {
       await M.reply(buttonMessage, MessageType.buttonsMessage);
     }
     if (z == "jackpot") {
-      const gold = amount * 20;
+      const gold = amount * 100;
       await this.client.addGold(user, gold);
       await this.client.DB.cd.updateOne(
         { jid: user },
         { $set: { slot: Date.now() } }
       );
-      const text = `${head}\n\n${p}\n\n🎊 *Jackpot!* You won *${gold} gold*.`;
+      const text = `${head}\n\n${p}\n\n🎊 *MEGA JACKPOT!* You won *${gold} gold*.`;
       const buttonMessage: any = {
         contentText: `${text}`,
         footerText: "© 𝖠𝗌𝗎𝗇𝖺 2022",
