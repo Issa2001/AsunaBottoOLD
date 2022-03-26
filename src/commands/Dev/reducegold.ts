@@ -22,10 +22,6 @@ export default class Command extends BaseCommand {
     M: ISimplifiedMessage,
     { joined }: IParsedArgs
   ): Promise<void> => {
-    if (!joined)
-      return void (await M.reply(`Please provide the amount of gold to reduce.`));
-    const term: any = joined.split(" ")[0];
-    if (isNaN(term)) return void M.reply(`Well... It should be a number.`);
     await this.client.DB.user
       .find({})
       .sort([["Xp", "descending"]])
@@ -35,7 +31,7 @@ export default class Command extends BaseCommand {
           await this.client.reduceGold(res[i].jid, term);
         }
         return void M.reply(
-          `🟩 *Removed ${term} gold from ${res.length} users wallet.*`
+          `🟩 *Removed all gold from ${res.length} users wallet.*`
         );
       });
   };
