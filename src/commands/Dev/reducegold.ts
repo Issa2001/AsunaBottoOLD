@@ -31,7 +31,7 @@ export default class Command extends BaseCommand {
           await this.client.reduceGold(res[i].jid, term);
         }
         return void M.reply(
-          `🟩 *Removed all gold from ${res.length} users wallet.*`
+          `🟩 *Removed ${term} gold from ${res.length} users wallet.*`
         );
       });
   };
