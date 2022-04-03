@@ -8,11 +8,11 @@ export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
       command: "reducegold",
-      description: "Reduces the amount of gold globally",
-      aliases: ["-gold"],
+      description: "",
+      aliases: [""],
       category: "dev",
       dm: true,
-      usage: `Under maintenance.`,
+      usage: ``,
       modsOnly: true,
       baseXp: 0,
 });
