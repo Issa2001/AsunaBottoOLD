@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
             command: 'fox',
             description: `Will send you random fox image .`,
             aliases: ['fox'],
-            category: 'nature',
+            category: 'utils',
             usage: `${client.config.prefix}fox`,
             baseXp: 50
         })
