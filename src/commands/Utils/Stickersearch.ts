@@ -15,7 +15,7 @@ export default class Command extends BaseCommand {
             description: 'Search sticker. ',
             category: 'utils',
             dm: true,
-            usage: `${client.config.prefix}stickerserach [keywords]`
+            usage: `${client.config.prefix}stickersearch [keywords]`
         })
     }
     // static count = 0
@@ -32,8 +32,8 @@ if ((data as { error: string }).error) return void (await M.reply('Sorry, couldn
 const b = `${data.results?.[Math.floor(Math.random() * data.results.length)]?.media[0]?.mp4?.url}`
 
         const sticker: any = await new Sticker(b, {
-			pack: "sticker",
-			author: "BY cara",
+			pack: "𝘔𝘺𝘵𝘩𝘪𝘤🈲",
+			author: "İşşa☦",
 			quality: 90,
 			type: "crop",
 			categories: ["🎊"],
