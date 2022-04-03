@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
       aliases: ["-gold"],
       category: "dev",
       dm: true,
-      usage: `${client.config.prefix}reducegold`,
+      usage: `Under maintenance.`,
       modsOnly: true,
       baseXp: 0,
 });
