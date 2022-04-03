@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
             description: 'Gives you the trending list of google ',
             category: 'utils',
             
-            usage: `${client.config.prefix}trandinggoogle [title]`
+            usage: `${client.config.prefix}trendinggoogle [title]`
         })
     }
     // static count = 0

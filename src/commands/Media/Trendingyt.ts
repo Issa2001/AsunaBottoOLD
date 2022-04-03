@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
             description: 'Gives you the trending list of yt ',
             category: 'utils',
             
-            usage: `${client.config.prefix}trandingyt [title]`
+            usage: `${client.config.prefix}trendingyt [title]`
         })
     }
     // static count = 0
