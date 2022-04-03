@@ -12,7 +12,7 @@ export default class Command extends BaseCommand {
       description: "Mega Jackpot for *İşşa* & his mods only.",
       modsOnly: true,
       aliases: ["300","boolean"],
-      category: "economy",
+      category: "dev",
       usage: `${client.config.prefix}boolean <amount>`,
       baseXp: 30,
     });
