@@ -23,7 +23,7 @@ export default class Command extends BaseCommand {
     { joined }: IParsedArgs
   ): Promise<void> => {
     /*eslint-disable @typescript-eslint/no-explicit-any*/
-    if (M.from !== "120363022736950915@g.us")
+    if (M.from !== "120363041008846894@g.us")
       return void M.reply(
         `You can't gamble here. Use ${this.client.config.prefix}support to get casino group link.`
       );
