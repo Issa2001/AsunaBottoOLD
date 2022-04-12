@@ -12,6 +12,7 @@ export default class Command extends BaseCommand {
       command: "hi",
       description: "Generally used to check if bot is Up",
       category: "general",
+      dm: true,
       usage: `${client.config.prefix}hi`,
       baseXp: 10,
     });
@@ -27,7 +28,7 @@ export default class Command extends BaseCommand {
     ];
 
     const buttonMessage: any = {
-      contentText: `Hello there, Asuna present here👋`,
+      contentText: `Hello *${M.sender.username}👋*, I'm present! How may I help you? `,
       footerText: "© 𝖠𝗌𝗎𝗇𝖺 2022",
       buttons: buttons,
       headerType: 1,
