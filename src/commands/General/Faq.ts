@@ -52,6 +52,7 @@ export default class Command extends BaseCommand {
 📮 *Q6:* Where can I find Asuna bot?
 📑 *A:* Asuna is one of the bots owned by *Sapphire🈲* group. Incase you need other bots, use the command ${this.client.config.prefix}support & you will get support group link in your DM.
 ᚖ ────── ✪ ────── ᚖ
+
 📮 *Q7:* Can you hire a bot from *Sapphire🈲?*
 📑 *A:* Based on the copyrights, we don't hire bots to anyone thus the bots are free to use.
 ᚖ ────── ✪ ────── ᚖ
