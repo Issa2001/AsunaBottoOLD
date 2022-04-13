@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
         `You can't bet here. Use ${this.client.config.prefix}support to get casino group link.`
       );
     const user = M.sender.jid;
-    const time = 15000;
+    const time = 5000;
     const cd = await (await this.client.getCd(user)).slot;
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
@@ -86,7 +86,7 @@ export default class Command extends BaseCommand {
         } gold in your wallet to bet with this amount>*`
       );
     if (amount > 20000)
-      return void M.reply(`🟥 *You can't bet more than 15000 gold*.`);
+      return void M.reply(`🟥 *You can't bet more than 20000 gold*.`);
     const head = `🎰 *SLOT MACHINE* 🎰`;
     const buttons = [
       {
