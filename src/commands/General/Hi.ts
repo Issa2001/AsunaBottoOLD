@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
       category: "general",
       dm: true,
       usage: `${client.config.prefix}hi`,
-      baseXp: 20000,
+      baseXp: 10,
     });
   }
 
