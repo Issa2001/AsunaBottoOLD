@@ -24,7 +24,7 @@ export default class Command extends BaseCommand {
            MessageType.text
         ))
         const n = [
-            './assets/images/asuna-yuuki.png,./assets/images/yuuki-asuna.jpeg',
+            './assets/images/asuna-yuuki.png',./assets/images/yuuki-asuna.jpeg',
         ]
         let rin = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: rin }, MessageType.image, {quoted:M.WAMessage,
