@@ -160,7 +160,7 @@ export default class MessageHandler {
         }`
       );
     if (!command.config?.dm && M.chat === "dm")
-      return void M.reply("This command can ONLY be used in groups");
+      return void M.reply("This command can ONLY be used in groups!");
     if (
       command.config?.modsOnly &&
       !this.client.config.mods?.includes(M.sender.jid)
@@ -235,7 +235,7 @@ export default class MessageHandler {
         }
       );
       await this.client.sendMessage(Data.jids[p], buffer, MessageType.image, {
-        caption: `A wild pokemon appeared! Use <${this.client.config.prefix}catch> to catch this pokemon.`,
+        caption: `A Wild Pokemon Appeared! [Use ${this.client.config.prefix}catch <pokemon_name> to catch it!]`,
       });
       setTimeout(async () => {
         await this.client.DB.group.updateOne(
@@ -283,7 +283,7 @@ export default class MessageHandler {
         },
       ];
       const buttonMessage: any = {
-        contentText: `*A claimable character Appeared!*\n\n🎀 *Name: ${chara.name}*\n\n💬 *About:* ${chara.about}\n\n📛 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
+        contentText: `*A claimable character Appeared!*\n\n🏮 *Name: ${chara.name}*\n\n📑 *About:* ${chara.about}\n\n🌐 *Source: ${source[0].anime.title}*\n\n💰 *Price: ${price}*\n\n*[Use ${this.client.config.prefix}claim to have this character in your gallery]*`,
         footerText: "© 𝖠𝗌𝗎𝗇𝖺 2022",
         buttons: buttons,
         headerType: 4,
