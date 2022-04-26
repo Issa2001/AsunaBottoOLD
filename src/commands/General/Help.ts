@@ -38,7 +38,7 @@ export default class Command extends BaseCommand {
             let text = `Hello there, 👋🏽 *${M.sender.username}*\n\n•I am a *WhatsApp Bot* built to make your WhatsApp experience more fun.\n\n━━❰･Notes📮Side･❱━━\nMy name is *ASUNA🚀*.\n\nMy prefix is *${this.client.config.prefix}* and below are the usable commands 👇🏽\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `━━❰•Bot ${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}•❱━━\n• \`\`\`${categories[
+                text += `*━━❰${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}❱━━*\n➪ \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)

@@ -30,7 +30,7 @@ export default class Command extends BaseCommand {
       contentText: `*━━━❰ FAQ ❱━━━*
 
 📮 *Q1:* How do I add Asuna bot in my group?
-📑 *A:* Send the group link in the bot's or owner's DM &  it will join.
+📑 *A:* Send the group link in the bot's or owner's DM & it will join soon.
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q2:* What are the requirements for the bot to join a group?
@@ -42,11 +42,11 @@ export default class Command extends BaseCommand {
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q4:* Can the bot work in personal message?
-📑 *A:* Yes, the bot will work but with few commands like *!help* only! So you're recommended to use the bot in groups only.
+📑 *A:* Yes, but ONLY stickers command will work otherwise you're recommended to use the bot in groups only.
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q5:* Can I call the bot?
-📑 *A:* Calling the bot is at your own pleasure but with consequences thus you will be blocked instantly for calling the bot!
+📑 *A:* Calling the bot is at your own pleasure but with consequences thus you will be blocked & banned instantly for calling the bot!
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q6:* Where can I find Asuna bot?
@@ -58,10 +58,10 @@ export default class Command extends BaseCommand {
 ᚖ ────── ✪ ────── ᚖ
 
 📮 *Q8:* Why is the bot not working in my group?
-📑 *A:* There are two main reasons for that, either the bot is lagging due to data traffic or the bot is inactive.
+📑 *A:* There are 3 main reasons for that, either the bot is lagging due to data traffic, inactive or the bot has been banned.
 ᚖ ────── ✪ ────── ᚖ
 
-📮 *Q9:* How can I create a bot like Katsushika?
+📮 *Q9:* How can I create a bot like Asuna?
 📑 *A:* You can't deploy a version of Asuna thus it's not an open source project.
 ᚖ ────── ✪ ────── ᚖ
 
