@@ -10,7 +10,7 @@ import { Sticker, Categories, StickerTypes } from 'wa-sticker-formatter'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'stickerserach',
+            command: 'stickersearch',
             aliases: ['ssh', 'ssc'],
             description: 'Search sticker. ',
             category: 'utils',
