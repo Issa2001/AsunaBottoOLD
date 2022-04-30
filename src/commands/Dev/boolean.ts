@@ -72,14 +72,14 @@ export default class Command extends BaseCommand {
     const z = results[Math.floor(Math.random() * results.length)];
     if (!joined)
       return void M.reply(
-        `🟥 *Provide the amount of gold to bet. Usage Example - :slot 100.*`
+        `🟥 *Provide the amount of gold to bet. Usage Example - :300 100000.*`
       );
     const wallet = await (await this.client.getUser(user)).wallet;
     const terms: any = joined.trim().split(" ");
     const amount = terms[0];
     if (isNaN(amount)) return void M.reply(`🟥 *It must be a number*.`);
     if (amount < 100000)
-      return void M.reply(`🟥 *You can't bet gold less than 100.*`);
+      return void M.reply(`🟥 *You can't bet gold less than 100000.*`);
     if (amount > wallet)
       return void M.reply(
         `🟥 *You need ${
@@ -87,7 +87,7 @@ export default class Command extends BaseCommand {
         } gold in your wallet to bet with this amount>*`
       );
     if (amount > 5000000)
-      return void M.reply(`🟥 *You can't bet more than 15000 gold*.`);
+      return void M.reply(`🟥 *You can't bet more than 500000 gold*.`);
     const head = `🎰 *SLOT MACHINE* 🎰`;
     const buttons = [
       {
