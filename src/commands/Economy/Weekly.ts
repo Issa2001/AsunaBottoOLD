@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     const user = M.sender.jid;
     const time = 604800000;
-    const cd = await (await this.client.getUser(user)).lastDaily;
+    const cd = await (await this.client.getUser(user)).lastWeekly;
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
       return void M.reply(
@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
     await this.client.addGold(user, 7000);
     await this.client.DB.user.updateOne(
       { jid: user },
-      { $set: { lastDaily: Date.now() } }
+      { $set: { lastWeekly: Date.now() } }
     );
     return void M.reply(`🎉 *7000 gold* has been added to your wallet.`);
   };
