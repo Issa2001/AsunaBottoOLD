@@ -4,7 +4,7 @@
 
 
 
-# **Asuna: A WhatsApp BOT WITH RICH BOTTO FEATURES**
+# **Asuna: A MAINTAINED VERSION OF KATSUSHIKA**
 
 
 
