@@ -8,7 +8,7 @@ import request from "../../lib/request";
 export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
-      command: "goldleaderboard",
+      command: "goldlb",
       aliases: ["goldlb", "gleaderboard, lb --gold"],
       description: "Shows global gold LeaderBoard.",
       category: "general",
