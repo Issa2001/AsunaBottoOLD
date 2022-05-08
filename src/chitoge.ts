@@ -13,11 +13,12 @@ import AssetHandler from "./Handlers/AssetHandler";
 import EventHandler from "./Handlers/EventHandler";
 import NewsHandler from "./Handlers/NewsHandler";
 import ModsHandler from "./Handlers/ModsHandler";
+import ModsChecker from "./Checkers/ModsChecker";
 
 if (!process.env.MONGO_URI) throw new Error("MONGO URL IS NOT PROVIDED");
 const client = new WAClient({
-  name: process.env.NAME || "Asuna",
-  session: process.env.SESSION || "Asuna",
+  name: process.env.NAME || "Chitoge",
+  session: process.env.SESSION || "Chitoge",
   prefix: process.env.PREFIX || ":",
   mods: (process.env.MODS || "")
     .split(", ")
@@ -37,6 +38,7 @@ const assetHandler = new AssetHandler(client);
 const eventHandler = new EventHandler(client);
 const newsHandler = new NewsHandler(client);
 const modsHandler = new ModsHandler(client);
+const modsChecker = new ModsChecker(client);
 messageHandler.loadCommands();
 assetHandler.loadAssets();
 messageHandler.loadFeatures();
@@ -113,7 +115,8 @@ db.once("open", () => {
   client.once("open", () => {
     messageHandler.handleState();
     newsHandler.broadcastNews();
-    messageHandler.spawnPokemon();   
+    messageHandler.spawnPokemon();
+    modsChecker.check();
     messageHandler.summonChara();
   });
 });
