@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
     const w: any = joined.trim().split(" ")[0];
     if (w > 0 && w <= data.length) {
       const i = w - 1;
-      const text = `🎫 *ID: ${data[i].id}*\n\n🎀 *Name: ${data[i].name}*\n\n💬 *About:* ${data[i].about}\n\n📛 *Source: ${data[i].source}*`;
+      const text = `🎫 *ID: ${data[i].id}*\n\n🏮 *Name: ${data[i].name}*\n\n📑 *About:* ${data[i].about}\n\n🌐 *Source: ${data[i].source}*`;
       return void M.reply(
         await this.client.getBuffer(data[i].image),
         MessageType.image,
