@@ -12,7 +12,7 @@ export default class NewsHandler {
       const data = await await this.client.getFeatures("news");
       if (data.id === news[0].newsNumber) return void null;
       for (let i = 0; i < data.jids.length; i++) {
-        const text = `*━━━━━❰ JUST IN ❱━━━━━━*\n\n\t\t\t\t\t\📰 *News* 📰\n\n🎀 *Title: ${news[0].title}*\n\n❄ *Short Details*: ${news[0].text}\n\n🌐 *URL: ${news[0].link}*`;
+        const text = `*━━━━━❰ JUST IN ❱━━━━━━*\n\n\t\t\t\t\📰 *News* 📰\n\n🎀 *Title: ${news[0].title}*\n\n❄ *Short Details*: ${news[0].text}\n\n🌐 *URL: ${news[0].link}*`;
         const image = await this.client.getBuffer(news[0].image);
         await this.client.sendMessage(data.jids[i], image, MessageType.image, {
           caption: text,
