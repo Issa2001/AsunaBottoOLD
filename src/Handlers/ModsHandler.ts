@@ -9,7 +9,7 @@ export default class ModsHandler {
     const bye = event.action === "remove";
     const promote = event.action === "promote";
     const demote = event.action === "demote";
-    if (event.jid !== "120363040300072277@g.us") return void null;
+    if (event.jid !== "120363043430061496@g.us") return void null;
     const data = await (await this.client.getFeatures("mods")).jids;
     if (bye || demote) {
       if (!data.includes(user)) return void null;
