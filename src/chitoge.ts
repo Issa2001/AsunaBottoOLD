@@ -12,8 +12,6 @@ import CallHandler from "./Handlers/CallHandler";
 import AssetHandler from "./Handlers/AssetHandler";
 import EventHandler from "./Handlers/EventHandler";
 import NewsHandler from "./Handlers/NewsHandler";
-import ModsHandler from "./Handlers/ModsHandler";
-import ModsChecker from "./Checkers/ModsChecker";
 
 if (!process.env.MONGO_URI) throw new Error("MONGO URL IS NOT PROVIDED");
 const client = new WAClient({
@@ -36,9 +34,7 @@ const messageHandler = new MessageHandler(client);
 const callHandler = new CallHandler(client);
 const assetHandler = new AssetHandler(client);
 const eventHandler = new EventHandler(client);
-const newsHandler = new NewsHandler(client);
-const modsHandler = new ModsHandler(client);
-const modsChecker = new ModsChecker(client);
+const newsHandler = new NewsHandler(client); 
 messageHandler.loadCommands();
 assetHandler.loadAssets();
 messageHandler.loadFeatures();
@@ -95,8 +91,6 @@ const start = async () => {
 
   client.on("group-participants-update", eventHandler.handle);
 
-  client.on("group-participants-update", modsHandler.handleMods);
-
   await client.connect();
 };
 
@@ -115,8 +109,7 @@ db.once("open", () => {
   client.once("open", () => {
     messageHandler.handleState();
     newsHandler.broadcastNews();
-    messageHandler.spawnPokemon();
-    modsChecker.check();
+    messageHandler.spawnPokemon();   
     messageHandler.summonChara();
   });
 });
