@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
     super(client, handler, {
       command: "info",
       description: "Will display the info of the bot",
-      category: "dev",
+      category: "general",
       usage: `${client.config.prefix}info`,
       baseXp: 0,
     });
@@ -19,6 +19,7 @@ export default class Command extends BaseCommand {
   run = async (M: ISimplifiedMessage): Promise<void> => {
     /*eslint-disable @typescript-eslint/no-explicit-any*/
     const users = await this.client.DB.user.count();
+    const uban = await this.client.DB.user.countDocuments({ban: true});
     const chats: any = this.client.chats
       .all()
       .filter((v) => !v.read_only && !v.archive)
@@ -36,7 +37,7 @@ export default class Command extends BaseCommand {
     await M.reply(
       `*━━━❰ 𝖠𝗌𝗎𝗇𝖺 𝖡𝗈𝗍𝗍𝗈🚀 ❱━━━*\n\n 🚡 *Groups: ${
         chats.length
-      }*\n\n👥 *Users: ${users}*\n\n🚦 *Uptime: ${uptime()}*\n\n🌋 *Company: Sapphire🈲*`
+      }*\n\n👥 *Users: ${users}*\n\n🟥 *Banned Users: ${uban}*\n\n🚦 *Uptime: ${uptime()}*\n\n🌋 *Company: Sapphire🈲*`
     );
   };
 }
