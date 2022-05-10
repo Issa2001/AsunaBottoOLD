@@ -31,7 +31,7 @@ export default class Command extends BaseCommand {
             
 📫𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥;
 Wa.me/254115175696
-Wa.me/16156233842
+Wa.me/16156236963
 
 ⭕𝙂𝙞𝙩𝙝𝙪𝙗;
 https://github.com/Issa2001
