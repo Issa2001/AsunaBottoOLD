@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
 				mimetype: Mimetype.jpeg,
 				caption: `*🚀𝖠𝗌𝗎𝗇𝖺 𝖡𝗈𝗍𝗍𝗈*
 
-⚜𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: Maintained fork of Katsushika. 
+⚜𝗗𝗲𝘀𝗰𝗿𝗶𝗽𝘁𝗶𝗼𝗻: Maintained version of Katsushika. 
 
 🚥𝗦𝘁𝗮𝘁𝘂𝘀: Asuna is free to use & there is no script sold! Anyone gossiping to have the script have intentions of fraud & swindling you! BEWARE.
 
