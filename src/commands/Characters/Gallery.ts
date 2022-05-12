@@ -37,7 +37,7 @@ export default class Command extends BaseCommand {
         text
       );
     } else {
-      let text = `🌌*${M.sender.username}'s Gallery*🌌\n*Total Characters - ${data.length}*\n\n`;
+      let text = `*🌌${M.sender.username}'s Gallery🌌*\n*Total Characters - ${data.length}*\n\n`;
       for (let i = 0; i < data.length; i++) {
         text += `#${i + 1} - ${data[i].name} (From ${data[i].source})\n`;
       }
