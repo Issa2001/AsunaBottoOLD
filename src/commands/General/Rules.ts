@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
   constructor(client: WAClient, handler: MessageHandler) {
     super(client, handler, {
       command: "rules",
-      description: "shows the rules for beyond",
+      description: "shows the rules for Asuna",
       category: "general",
       usage: `${client.config.prefix}rules`,
       baseXp: 0,
