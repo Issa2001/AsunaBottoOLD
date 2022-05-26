@@ -42,7 +42,7 @@ export default class Command extends BaseCommand {
             MessageType.image,
             undefined,
             undefined,
-            `Hey✨\n•We as the Sapphire group & I as Asuna we cheer you for another trip around the sun, the day is all yours pal.🤍May you receive the greatest of all joys & everlasting bliss.✨You are a wonderful gift yourself & you deserve the best.💘 Happy Birthday.🥰\n\n 🎉🍾🎂𝗛𝗮𝗽𝗽𝘆 𝗕𝗶𝗿𝘁𝗵𝗱𝗮𝘆🎂🍾🎉\n •Enjoy this special day as you turn an year older       *@${user.split('@')[0]}*, TML😍❤\n\n`
+            `Hey✨\n•We as the Sapphire group & I as Asuna we cheer you for another trip around the sun, the day is all yours pal.🤍May you receive the greatest of all joys & everlasting bliss.✨You are a wonderful gift yourself & you deserve the best.💘 Happy Birthday.🥰\n\n 🎉🍾🎂𝗛𝗮𝗽𝗽𝘆 𝗕𝗶𝗿𝘁𝗵𝗱𝗮𝘆🎂🍾🎉\n •Enjoy this special day as you turn an year older *@${user.split('@')[0]}*, TML😍❤\n\n`
         )
     }
 }
