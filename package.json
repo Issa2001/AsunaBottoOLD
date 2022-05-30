@@ -1,7 +1,7 @@
 {
-    "name": "chitoge",
+    "name": "Asuna",
     "version": "3.0.0",
-    "description": "A WhatsApp Bot With Rich Anime Features.",
+    "description": "A maintained version of Katsushika",
     "main": "dist/chitoge.js",
     "scripts": {
         "build": "tsc -p .",
@@ -12,20 +12,20 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ShineiIchijo/Chitoge.git.git"
+        "url": "git+https://github.com/Issa2001/AsunaBotto.git"
     },
     "keywords": [
         "bot",
         "typescript",
         "whatsapp",
-        "chitoge"
+        "Asuna"
     ],
-    "author": "Synthesized Infinity & Shinei Ichijo",
+    "author": "Synthesized Infinity, Sapphire & Issa",
     "license": "AGPL-3.0",
     "bugs": {
-        "url": "https://github.com/ShineiIchijo/Chitoge/issues"
+        "url": "https://github.com/Issa2001/AsunaBotto/issues"
     },
-    "homepage": "https://github.com/ShineiIchijo/Chitoge#readme",
+    "homepage": "https://github.com/Issa2001/AsunaBotto#readme",
     "devDependencies": {
         "@types/express": "^4.17.12",
         "@types/fs-extra": "^9.0.11",
