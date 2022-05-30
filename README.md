@@ -7,9 +7,6 @@
 # **Asuna: A MAINTAINED VERSION OF KATSUSHIKA**
 
 
-
-[![CodeFactor](https://www.codefactor.io/repository/github/shineiichijo/chitoge/badge)](https://www.codefactor.io/repository/github/shineiichijo/chitoge)
-
 > A Fully Modular and Efficient Bot <br>
 
  Button : If you are deploying normally
@@ -54,7 +51,7 @@ Button : If you are deploying from a fork
 
 -   Section Moved to
 
-    [Lumine-Guides](https://github.com/BEYOND-THE-WORLD/Lumine-guides/blob/main/README.md)
+    [Lumine-Guides](https://github.com/Issa2001/AsunaBotto-guides/blob/main/README.md)
 
 
 
@@ -64,7 +61,7 @@ Button : If you are deploying from a fork
 
 -   To view all features, click
 
-    here➡️[lumine-_featuresList.md](https://github.com/BEYOND-THE-WORLD/lumine-/blob/main/Features.md)
+    here➡️[AsunaBotto-_featuresList.md](https://github.com/Issa2001/AsunaBotto-/blob/main/Features.md)
 
 
 
