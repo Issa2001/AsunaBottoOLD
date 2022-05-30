@@ -6287,6 +6287,20 @@ w3c-xmlserializer@^2.0.0:
   dependencies:
     xml-name-validator "^3.0.0"
 
+w5-textmaker@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/w5-textmaker/-/w5-textmaker-1.0.2.tgz#1b1d8f5887ea45dce287d5b3685feeef0119e0d8"
+  integrity sha512-7tL7uQObLHA2hhu/Q9DyEpim/BiyZ1XsoGlmNoQjTVNx2mk9IBQY4oRXoCvxZgeCXUqqi5+IM/OpC/wqvBfjuQ==
+  dependencies:
+    axios "^0.21.1"
+    cheerio "^1.0.0-rc.5"
+    cookie "^0.4.1"
+    form-data "^4.0.0"
+    instatouch "^2.3.3"
+    moment-timezone "^0.5.33"
+    node-fetch "^2.6.1"
+    paste.gg "^1.0.3"
+    
 wa-sticker-formatter@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/wa-sticker-formatter/-/wa-sticker-formatter-4.2.0.tgz#fcff36ed1a2718a3281abc377d28588676890bed"
@@ -6527,15 +6541,16 @@ yargs@^17.2.1:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yt-search@^2.10.2:
-  version "2.10.2"
-  resolved "https://registry.yarnpkg.com/yt-search/-/yt-search-2.10.2.tgz#57790043b958d3f9e357607b3f3c252ba2314b59"
-  integrity sha512-cwg8yK3pVuwczfoADOqhVHj5i/Qv8xb7/wYh3gwvfGiHsxpgDtMKKuBWyOenrXwwC7A/nj3YQYsfDlZ2/rk83w==
+
+yt-search@^2.10.3:
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/yt-search/-/yt-search-2.10.3.tgz#c90db45e4a960f06ef1bfe7ba13457790ded661e"
+  integrity sha512-msITxMhn+1f3RIlS2R0d5/275grX0nUgaD570Fap3gvPmwfvR9w31JG8B9++4Xtm6BLAzhdITK7kAWRInef8QQ==
   dependencies:
     async.parallellimit "~0.5.2"
     boolstring "~1.0.2"
     cheerio "^1.0.0-rc.10"
-    dasu "~0.4.2"
+    dasu "~0.4.3"
     human-time "0.0.2"
     jsonpath-plus "~5.0.2"
     minimist "~1.2.5"
@@ -6555,11 +6570,11 @@ yt-search@^2.8.0:
     minimist "~1.2.5"
     node-fzf "~0.5.1"
 
-ytdl-core@^4.8.0, ytdl-core@^4.9.1:
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-4.9.1.tgz#f587e2bd8329b5133c0bac4ce5ee1f3c7a1175a9"
-  integrity sha512-6Jbp5RDhUEozlaJQAR+l8oV8AHsx3WUXxSyPxzE6wOIAaLql7Hjiy0ZM58wZoyj1YEenlEPjEqcJIjKYKxvHtQ==
+ytdl-core@^4.11.0:
+  version "4.11.0"
+  resolved "https://registry.yarnpkg.com/ytdl-core/-/ytdl-core-4.11.0.tgz#79a3ea94d9d662b4b3acecdb1372ed3f1a9ea9db"
+  integrity sha512-Q3hCLiUA9AOGQXzPvno14GN+HgF9wsO1ZBHlj0COTcyxjIyFpWvMfii0UC4/cAbVaIjEdbWB71GdcGuc4J1Lmw==
   dependencies:
-    m3u8stream "^0.8.3"
-    miniget "^4.0.0"
+    m3u8stream "^0.8.6"
+    miniget "^4.2.2"
     sax "^1.1.3"
