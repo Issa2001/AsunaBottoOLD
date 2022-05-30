@@ -51,7 +51,7 @@ Button : If you are deploying from a fork
 
 -   Section Moved to
 
-    [Lumine-Guides](https://github.com/Issa2001/AsunaBotto-guides/blob/main/README.md)
+    [AsunaBotto-Guides](https://github.com/Issa2001/AsunaBotto-guides/blob/main/README.md)
 
 
 
@@ -61,7 +61,7 @@ Button : If you are deploying from a fork
 
 -   To view all features, click
 
-    here➡️[AsunaBotto-_featuresList.md](https://github.com/Issa2001/AsunaBotto-/blob/main/Features.md)
+    here➡️[AsunaBotto_featuresList.md](https://github.com/Issa2001/AsunaBotto/blob/main/Features.md)
 
 
 
