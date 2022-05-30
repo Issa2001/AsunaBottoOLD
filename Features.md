@@ -20,7 +20,7 @@
 
 |Economy| usage |
 
-|----|--------|
+|----|-------------|
 
 |Bank| Shows gold in the bank of the given user|
 
