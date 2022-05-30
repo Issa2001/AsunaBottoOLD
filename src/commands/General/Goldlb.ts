@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
     //   M.reply(JSON.stringify(lb));
 
     // M.reply('total user heuhue :'+indexes.toString())
-    let message = ["_*USERS*_ :" + indexes.toString() + ""];
+    let message = ["*ASUNA BOTTO🚀*:" + indexes.toString() + ""];
     let mention = [];
     let i = 0;
     for (const users of lb) {
@@ -46,7 +46,7 @@ export default class Command extends BaseCommand {
         ? this.client.contacts[users.jid].short
         : `@${users.jid.split("@")[0]}`;
 
-      let text = `_*ASUNA BOTTO🚀*\n *#${i}*\n*🏮USER : ${username}*\n*🎉Experience*: ${users.Xp}\n*🏦BANK* : ${users.bank}\n*🪙GOLD* : ${users.wallet}\n`;
+      let text = `*#${i}*\n*🏮Username : ${username}*\n*🎉Experience*: ${users.Xp}\n*🏦Bank* : ${users.bank}\n*🪙Gold* : ${users.wallet}\n`;
       message.push(text);
     }
     console.log(message);
