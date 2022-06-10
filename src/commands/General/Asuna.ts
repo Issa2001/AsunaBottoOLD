@@ -33,7 +33,8 @@ export default class Command extends BaseCommand {
 
 🚥𝗦𝘁𝗮𝘁𝘂𝘀: Asuna is free to use & there is no script sold! Anyone gossiping to have the script have intentions of fraud & swindling you! BEWARE.
 
-🧩𝗛𝗶𝗻𝘁: Asuna is not an open source project, therefore you can't deploy it.
+🧩𝗛𝗶𝗻𝘁: Asuna is not an open source project, therefore you can deploy a version of it;
+https://github.com/Issa2001/Katsushika
 
 📑𝗟𝗶𝗰𝗲𝗻𝘀𝗲: You may obtain a copy of the License at;
 http://www.gnu.org/licenses/
