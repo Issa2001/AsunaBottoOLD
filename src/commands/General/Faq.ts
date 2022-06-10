@@ -13,7 +13,7 @@ export default class Command extends BaseCommand {
       description: "shows the faq of asuna",
       category: "general",
       usage: `${client.config.prefix}rules`,
-      baseXp: 0,
+      baseXp: 100,
     });
   }
 
