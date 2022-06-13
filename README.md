@@ -4,7 +4,7 @@
 
 
 
-# **Asuna: A MAINTAINED VERSION OF KATSUSHIKA**
+# **Asuna: A MAINTAINED VERSION OF BEYOND**
 
 
 > A Fully Modular and Efficient Bot <br>
