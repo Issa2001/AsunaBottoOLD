@@ -1,10 +1,10 @@
 {
 
-    "name": "Katsushika",
+    "name": "Asuna",
 
     "version": "3.0.0",
 
-    "description": "A reversed version of Asuna & Chitoge Bots",
+    "description": "A maintained version of beyond",
 
     "main": "dist/chitoge.js",
 
@@ -26,7 +26,7 @@
 
         "type": "git",
 
-        "url": "git+https://github.com/Issa2001/Katsushika.git"
+        "url": "git+https://github.com/Issa2001/AsunaBotto.git"
 
     },
 
@@ -48,11 +48,11 @@
 
     "bugs": {
 
-        "url": "https://github.com/Issa2001/Katsushika/issues"
+        "url": "https://github.com/Issa2001/AsunaBotto/issues"
 
     },
 
-    "homepage": "https://github.com/Issa2001/Katsushika#readme",
+    "homepage": "https://github.com/Issa2001/AsunaBotto#readme",
 
     "devDependencies": {
 
