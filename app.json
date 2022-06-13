@@ -1,8 +1,8 @@
 {
 
-  "name": "AsunaBotto",
+  "name": "Katsushika",
 
-  "description": "A maintained version of Katsushika. ",
+  "description": "A reversed version of AsunaBotto",
 
   "keywords": [
 
@@ -20,15 +20,15 @@
 
       "whatsapp-sticker-bot",
 
-      "whatsapp-botto"
+      "Katsushika"
 
   ],
 
-  "website": "https://github.com/Issa2001/AsunaBotto#readme",
+  "website": "https://github.com/Issa2001/Katsushika#readme",
 
-  "repository": "https://github.com/Issa2001/AsunaBotto.git",
+  "repository": "https://github.com/Issa2001/Katsushika.git",
 
-  "logo": "https://www.linkpicture.com/q/yuuki-asuna.jpeg",
+  "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8rFLDQjMqZvuSZlisVVN4FecG5ftEFH541dIMwn9gySlStL2QF2J48ew&s=10",
 
   "success_url": "/",
 
