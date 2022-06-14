@@ -65,6 +65,13 @@ Button : If you are deploying from a fork
 
 
 
+##  🚀 Contributors
+
+<a href="https://github.com/Issa2001/AsunaBotto/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Issa2001/Chitoge" />
+ 
+ 
+ 
 ## 💪 Contribution
 
 
