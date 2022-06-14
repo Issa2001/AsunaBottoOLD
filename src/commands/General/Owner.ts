@@ -29,7 +29,7 @@ export default class Command extends BaseCommand {
 				mimetype: Mimetype.jpeg,
 				caption: `Hey pal!🍃I'm Issa, the owner of AsunaBotto.
             
-*「Contact Me」*
+*「CONTACT ME」*
 
 📫𝙒𝙝𝙖𝙩𝙨𝘼𝙥𝙥;
 Wa.me/254115175696
