@@ -26,7 +26,7 @@ export default class Command extends BaseCommand {
         `You can't bet here. Use ${this.client.config.prefix}support to get casino group link.`
       );
     const user = M.sender.jid;
-    const time = 5000;
+    const time = 20000;
     const cd = await (await this.client.getCd(user)).slot;
     if (time - (Date.now() - cd) > 0) {
       const timeLeft = ms(time - (Date.now() - cd));
