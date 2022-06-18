@@ -64,6 +64,8 @@ export type TCategory =
 
   | "media"
 
+  | "textpro"
+
   | "moderation"
 
   | "pokemon"
