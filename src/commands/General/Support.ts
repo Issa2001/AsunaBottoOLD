@@ -20,7 +20,7 @@ export default class Command extends BaseCommand {
         (await this.client.sendMessage(
         M.sender.jid,
                 `*📮𝗦𝘂𝗽𝗽𝗼𝗿𝘁 𝗚𝗿𝗼𝘂𝗽 𝗟𝗶𝗻𝗸𝘀*
-「Sapphire: RE🈲」:\n\nhttps://chat.whatsapp.com/D1M6zr0tF7v2N30HfEJPdp\n\n「Sapphire: Casino💰」:\n\nhttps://chat.whatsapp.com/Jq4ToZByPSJHaxqAtb32sg\n\n 「Sapphire: Quiz📑」:\n\nhttps://chat.whatsapp.com/K0Y7Hepp3bW7TMk8wJH9bU`,
+「Sapphire: LAST RUN🚀」:\n\nhttps://chat.whatsapp.com/CToNn7booyKCY81KBp4EdI\n\n「Sapphire: Casino💰」:\n\nhttps://chat.whatsapp.com/CqkSfSE9NcfCrKpZ0L5iDp\n\n 「Sapphire: Quiz📑」:\n\nhttps://chat.whatsapp.com/Hb9k9E31AiY4yxhdJBHPrW\n\n「Sapphire: NSFW🧜‍♂️」\n\nhttps://chat.whatsapp.com/L1UnEn35h5h4i35qTs585g`,
            MessageType.text
         ))
         const n = [
