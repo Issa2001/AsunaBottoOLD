@@ -304,18 +304,18 @@ export default class MessageHandler {
   };
 
   handleState = async (): Promise<void> => {
-    const text = `ASUNA RECONNECTED🚀`;
+    const text = `ASUNA CONNECTING...`;
     await this.client.sendMessage(
-      "120363040300072277@g.us",
+      "120363026200857774@g.us",
       text,
       MessageType.text
     );
   };
 
   sendReconnectMessage = async (): Promise<void> => {
-    const text = `ASUNA RECONNECTED🚀`;
+    const text = `ASUNA CONNECTED🚀`;
     await this.client.sendMessage(
-      "120363040300072277@g.us",
+      "120363026200857774@g.us",
       text,
       MessageType.text
     );
