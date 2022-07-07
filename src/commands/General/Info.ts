@@ -37,7 +37,7 @@ export default class Command extends BaseCommand {
     await M.reply(
       `*━━━❰ 𝖠𝗌𝗎𝗇𝖺 𝖡𝗈𝗍𝗍𝗈🚀 ❱━━━*\n\n 🚡 *Groups: ${
         chats.length
-      }*\n\n👥 *Users: ${users}*\n\n🟥 *Banned Users: ${uban}*\n\n🔗 *Commands: ${this.handler.commands.size}*\n\n🚦 *Uptime: ${uptime()}*\n\n🌋 *Company: Sapphire🈲*`
+      }*\n\n👥 *Users: ${users}*\n\n🟥 *Banned Users: ${uban}*\n\n📪 *Commands: ${this.handler.commands.size}*\n\n🚦 *Uptime: ${uptime()}*\n\n🌋 *Company: Sapphire🈲*`
     );
   };
 }
