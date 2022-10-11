@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
   ): Promise<void> => {
     const user = M.sender.jid;
     const chitoge =
-      "https://www.linkpicture.com/q/yuuki.jpeg";
+      "";
     if (!parsedArgs.joined) {
       const commands = this.handler.commands.keys();
       const categories: { [key: string]: ICommand[] } = {};
