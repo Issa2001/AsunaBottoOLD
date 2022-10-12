@@ -61,7 +61,7 @@ export default class Command extends BaseCommand {
         MessageType.video,
         {
           quoted: M.WAMessage,
-          mimetype: Mimetype.gif,
+          mimetype: image.jpeg,
           caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
           contextInfo: { mentionedJid: [user] },
         }
