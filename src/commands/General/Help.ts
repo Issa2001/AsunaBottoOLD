@@ -58,10 +58,10 @@ export default class Command extends BaseCommand {
       return void this.client.sendMessage(
         M.from,
         { url: chitoge },
-        MessageType.video,
+        MessageType.image,
         {
           quoted: M.WAMessage,
-          mimetype: image.jpeg,
+          mimetype: Mimetype.jpeg,
           caption: `${text} 📝 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,
           contextInfo: { mentionedJid: [user] },
         }
